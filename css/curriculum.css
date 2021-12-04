@@ -1,0 +1,68 @@
+
+section {
+    display: grid;
+    grid-template-columns: 100%;
+}
+#experiencia {
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+#estudios {
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+#habilidades {
+    grid-row: 3;
+}
+.gap {
+    row-gap: 10px;
+}
+section h3 {
+    grid-column: span 2;
+    background-color: #B3AEAD;
+    padding: 10px 10px 10px 10px;
+}
+
+.izquierda {
+    grid-column: 1/2;
+    font-weight: bold;
+    margin-right: 10px;
+}
+.derecha {
+    grid-column: 2/3;
+    border-left:2px #B3AEAD solid;
+    padding-left: 10px;
+}
+
+.habilidad {
+    position: relative;
+    margin: 5px 5px 5px 5px ;
+    padding: 5px 5px 5px 5px;
+}
+
+.barraTotal{
+    position: absolute;
+    bottom: 10px;
+    left: 22%;
+    width: 78%;
+    background-color: #b3aead63;
+    z-index: 2;
+    height: 25px;
+    border: 2px #B3AEAD solid;
+}
+.barraProgreso{
+    border: 2px blue solid;
+    background-color: rgba(101, 183, 204, 0.288);
+    z-index: 3;
+    height: 25px;
+}
+.barraMedio{
+    width: 50%;
+}
+.barraBajo{
+    width: 30%;
+}
+
+
